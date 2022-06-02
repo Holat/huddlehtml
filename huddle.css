@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+
+body{
+    color:hsl(192, 100%, 9%) ;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+h1,h2,h3,h4{
+    font-family: 'Poppins', sans-serif ;
+}
+.mobile{
+    display: none;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 40px auto;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 200px;
+}
+.header button{
+    color:hsl(322, 100%, 66%) ;
+    background-color: rgba(255,255,255,.1);
+    border-radius: 2rem;
+    padding: 10px 30px 10px 30px;
+    border:1.5px solid hsl(322, 100%, 66%);
+    font-weight: 400;
+}
+.header button:hover{
+    color:hsl(321, 100%, 78%) ;
+    border:1.5px solid hsl(321, 100%, 78%) ;
+    cursor: pointer;
+}
+.mock{
+    width: 80% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.mock h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+.mock p{
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.btn{
+    padding: 25px 100px 25px 100px;
+    border-radius: 2.5rem;
+    background-color:hsl(322, 100%, 66%) ;
+    color: white;
+    border: none;
+    box-shadow: 0 5px 9px 0.5px gray ;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 100px;
+}
+.btn:hover{
+    background-color:hsl(321, 100%, 78%) ;
+    cursor: pointer;
+}
+.mock img{
+    margin-bottom: 50px;
+}
+.commess{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20rem;
+    margin-bottom: 300px ;
+}
+.commess h1{
+    font-family: 'Poppins', sans-serif ;
+    font-size: 5rem;
+}
+.commess p{
+    color:hsla(192, 100%, 9%,.5) ;
+    text-align: center;
+}
+.grow{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-bottom: 0;
+    width: 100%;
+}
+.conversation{
+    margin-top: 200px;
+    margin-bottom: 80px;
+}
+.sbg{
+    background-color: hsl(207, 100%, 98%) ;
+}
+.grow h2{
+    font-size: 2.5rem;
+}
+.grow p{
+   font-size: 1rem; 
+   font-weight: 200;
+}
+.grow-img img{
+    width: 600px;
+}
+
+.build{
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 300px;
+}
+.build h2{
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+footer{
+    width: 100%;
+    color: white;
+    background-color: hsl(192, 100%, 9%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.footer{
+    text-align: left;
+}
+
+.phone, .email{
+    display: flex;
+    align-items: center ;
+    margin-top: 20px;
+}
+.phone p{
+    margin-left: 20px;
+}
+.email p{
+    margin-left: 20px;
+}
+.social{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+ion-icon{
+    font-size: 32px;
+    margin-right: 20px;
+    margin-top: 50px;
+    text-align: left;
+    color: white;
+    cursor: pointer;
+}
+ion-icon:hover{
+    color: rgb(86, 159, 219);
+}
+
+.subscribe{
+    margin-top: 30px;
+}
+.subscribe  input{
+    color: hsl(192, 100%, 9%);
+    background-color: white;
+    border:1px  solid hsl(322, 100%, 66%);
+    border-radius: .2rem;
+    cursor: pointer;
+    height: 50px;
+    width: 250px;
+    padding: 10px;
+}
+.subscribe  input:hover{
+    border:1px solid hsl(321, 100%, 78%) ;
+}
+.subscribe button{
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    font-weight: bold;
+    font-size: .9rem;
+    border: none;
+    border-radius: .2rem;
+    cursor: pointer;
+    padding: 5px 15px 5px 15px;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    margin-left: 30px;
+}
+.subscribe button:hover{
+    background-color: hsl(321, 100%, 78%)  ;
+}
+.newsletter h3{
+    margin-bottom: 20px;
+}
+.foot-logo{
+    margin-bottom: 20px;
+}
+
+
+@media(max-width:800px){
+    .mock h1{
+        font-size: 2rem;
+    }
+    .mock p{
+        width: 60%;
+    }
+    .commess{
+        display: block;
+        margin-top: 200px;
+        margin-bottom:200px ;
+    }
+    .commess p{
+        margin-bottom: 120px;
+    }
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+    
+    .grow{
+        width: 100%;
+    }
+    .sbg{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .grow img{
+        width: 400px;
+        margin-bottom: 100px;
+    }
+    .grow h2{
+        margin-bottom: 30px;
+    }
+    .grow p{
+        margin-bottom: 100px;
+        width: 70%;
+    }
+    .gt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .conversation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: left;
+        text-align: left;
+    }
+    .footer{
+        text-align: left;
+        width: 80%;
+    }
+    .subscribe{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 200px;
+        width: 80%;
+    }
+    .subscribe input{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .newsletter{
+        width: 80%;
+    }
+    .subscribe  button{
+        align-self: flex-end;
+        width: 50%;
+    }
+}
